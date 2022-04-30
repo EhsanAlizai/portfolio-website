@@ -1,129 +1,185 @@
 body {
-    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
   }
   
-  #navbar {
-    position: fixed;
-    top: 0px;
+  .navbar {
+    font-size: 15px;
+  }
+  
+  #navbar > ul {
+    color: #fbfbfb;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  #navbar > ul > li.active > a {
+    background-color: transparent;
+  }
+  
+  .navbar-inverse .navbar-brand {
+    font-weight: 600;
+    font-size: 24px;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    font-style: cursive;
+  }
+  
+  h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 3.0em;
+    padding-bottom: 20px;
+  }
+  
+  .header-section {
+    background-image: url("https://images.unsplash.com/7/Top_view.jpg?fit=crop&fm=jpg&h=700&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1375");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #45484B;
+    height: 100vh;
     width: 100%;
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    background: deepskyblue;
   }
   
-  #navbar a {
-    text-decoration: none;
-    display: block;
-    padding: 1em;
-    font-size: 1.5em;
+  .header-section h1 {
+    font-size: 5.5rem;
+  }
+  
+  .intro-text {
+    padding-top: 150px;
+    color: #ffffff;
+  }
+  
+  .intro-text p {
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italics;
+  }
+  
+  .intro-btns {
+    margin-top: 40px;
+  }
+  
+  .profile-pic {
+    margin: 20px auto;
+    width: 250px;
+  }
+  
+  .profile-pic img {
+    border-radius: 100%;
+    border: 3px solid grey;
+    margin-bottom: 40px;
+  }
+  
+  .profile-pic img:hover {
+    border-radius: 3px;
+  }
+  
+  .social-icons {
+    display: inline;
+    margin: 40px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    text-align: center;
+    padding-right: 10px;
+    border: 2px solid #fff;
+    width: 50px;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 100%;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  #about {
+    padding-top: 20px;
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  #portfolio {
+    padding-top: 25px;
+  }
+  
+  .portfolio-title {
     font-weight: bold;
-    color: white;
   }
   
-  #navbar a:hover {
-    background: #00abe5;
+  .portfolio-subtitle {
+    font-style: italic;
   }
   
-  main {
-    display: grid;
-    grid-template-rows: 100vh auto 300px 100px;
+  .thumbnail:hover {
+    background-color: #333;
+    color: #ffffff;
   }
   
-  #welcome-section {
+  #about h1 {
+    padding-top: 20px;
+  }
+  
+  #contact {
+    background-color: #333;
+  }
+  
+  #contact p {
+    color: #fbfbfb;
+    font-size: 24px;
+    padding: 20px 0;
+  }
+  
+  .contact-btn {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #131313;
+  }
+  
+  footer > span {
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .footer-nav {
+    padding: 20px;
+    text-transform: uppercase;
     text-align: center;
-    background: lightgrey;
-    padding-top: 45vh;
   }
   
-  #projects {
-    text-align: center;
-    background: white;
+  .footer-nav li {
+    display: inline;
+    font-weight: 600;
+    padding-right: 20px;
   }
   
-  #profile {
-    text-align: center;
-    background: lightgrey;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-  
-  .circle {
-    background: grey;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-  }
-  
-  #profile-link {
+  .footer-nav a {
+    color: #79797B;
     text-decoration: none;
-    color: black;
-    font-size: 1.2em;
+    font-size: 15px;
   }
   
-  #copyright {
-    text-align: center;
-    background: deepskyblue;
-    padding: 1em;
+  .footer-nav a:hover {
+    color: #fbfbfb;
   }
   
-  .tiles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
-  }
   
-  .project-tile {
-    background: white;
-    padding: 2em;
-  }
+  /* Small devices (tablets, 768px and up) */
   
-  .project-tile a {
-    text-decoration: none;
-    color: grey;
-    font-weight: bold;
-    font-size: 0.9em;
-  }
-  
-  .responsive {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  @media all and (max-width: 800px) {
-    #navbar {
-      justify-content: space-around;
-    }
-  
-    .tiles {
-      grid-template-columns: 1fr 1fr;
+  @media (min-width: @screen-sm-min) {
+    .intro-text {
+      padding-top: 50px;
+      color: red;
+      font-size: 14px;
     }
   }
-  
-  @media all and (max-width: 600px) {
-    #navbar {
-      flex-flow: column wrap;
-      padding: 0;
-    }
-  
-    #navbar a {
-      text-align: center;
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-  
-    #navbar a:last-of-type {
-      border-bottom: none;
-    }
-  
-    .tiles {
-      grid-template-columns: 1fr;
-    }
-  }
-  

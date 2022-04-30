@@ -3,76 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles.css" />s
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
 </head>
 <body>
-  
-      
-    <main>
-
-        <section id="welcome-section">
-          <h1>Hey I am Fred Camp,</h1>
-          <p>a fullstack developer.</p>
-          <p>Currently updating my knowledge on the great FreeCodeCamp website</p>
-        </section>
-      
-        <section id="projects">
-      
-          <h1>These are some of my projects.</h1>
-          <a href="https://codepen.io/frcodecamp" target="_blank">Show all</a>
-      
-          <div class="tiles">
-            <div class="project-tile">
-              <a href="https://codepen.io/frcodecamp/full/QxweeG" target="_blank">
-              <img src="https://codepen.io/frcodecamp/pen/QxweeG/image/small.png" alt="freeCodeCamp : Build a Tribute Page" class="responsive">
-              <div>freeCodeCamp : Build a Tribute Page</div>
-              </a>
+    <div class="header-section">
+     <div class="container text-center intro-text">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Hello, I'm Ehsanulhaq.</h1>
+              <p>Software Developer, Technology enthusiast 
+            <div class="col-md-12">
+              <p class="intro-btns">
+                <a class="btn btn-info btn-lg" href="https://www.twitter.com/ehsan" role="button" target="_blank"><i class="fa fa-twitter fa-fw"></i>Twitter</a>
+                <a class="btn btn-default btn-lg" href="https://www.github.com/ehsanalizai" role="button" target="_blank"><i class="fa fa-github fa-lg fa-fw"></i>Github</a>
+                </p>
             </div>
-      
-            <div class="project-tile">
-              <a href="https://codepen.io/frcodecamp/full/LrbzpV" target="_blank">
-              <img src="https://codepen.io/frcodecamp/pen/LrbzpV/image/small.png" alt="freeCodeCamp : Build a Technical Documentation Page" class="responsive">
-              <div>freeCodeCamp : Build a Technical Documentation Page</div>
-              </a>
-            </div>
-      
-            <div class="project-tile">
-              <a href="https://codepen.io/frcodecamp/full/LrVPgP" target="_blank">
-              <img src="https://codepen.io/frcodecamp/pen/LrVPgP/image/small.png" alt="freeCodeCamp : Build a Survey Form" class="responsive">
-              <div>freeCodeCamp : Build a Survey Form</div>
-              </a>
-            </div>
-      
-            <div class="project-tile">
-              <a href="https://codepen.io/frcodecamp/full/ZROoPN" target="_blank">
-              <img src="https://codepen.io/frcodecamp/pen/ZROoPN/image/small.png" alt="freeCodeCamp : Build a Product Landing Page" class="responsive">
-              <div>freeCodeCamp : Build a Product Landing Page</div>
-              </a>
-            </div>
-      
-            <div>
-        </section>
-      
-        <section id="profile">
-          <h1>Let's work together...</h1>
-          <p>Currently looking for a job in Germany</p>
-          <div class="circle">
-            <a id="profile-link" href="https://www.freecodecamp.org/frcodecamp" target="_blank">FCC</a>
           </div>
-        </section>
-      
-        <section id="copyright">
-          <h1>&copy; 2018 Fred Camp</h1>
-        </section>
-      
-      </main>
+        </div>
+      </div>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <h1 class="text-center">ABOUT</h1>
+            <div class="col-md-4">
+              <div class="profile-pic center-block">
+                <img  src="data:image/jpeg;base64,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" alt="" class="img-responsive"/>
+                <div class="social-icons text-center">
+                <a href="https://www.twitter.com/elonmusk" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.github.com/elonmusk" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.freecodecamp.com/elonmusk" target="_blank"><i class="fa fa-fire"></i></a>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p>Ehsan & Said are a Software Developer, IT Specialist and Engineer.</p>
+              <p>He is a very curious and dedicated professional who loves to solve complex problems. He loves computer programming, hacking technology, UI/UX design, travelling, music, learning and sharing knowledge. </p>
+                
+            </div>
+            <div class="col-md-4">  
+              <p>He prides himself on his reasoning and problem solving skills. When he is not coding or building websites, he is probably reading, having a deep conversation, teaching kids/young adults how to code or training business owners on how to use WordPress.</p>
+              <p>For comments or questions, feel free to hit me up on <a href="https://twitter.com/elonmusk">Twitter</a> or via email.</p>
+              <p><h3>Tools & Areas of Expertise:</h3> React ,React native, Python, Javascript, HTML & CSS3, Bootstrap,C#.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="portfolio">
+        <div class="container text-center">
+          <h1>Portfolio</h1>
+          <p>Below are some of my selected works.</p>
+          <div class="row">
+            <div class="col-sm-4 col-md-4">
+              <div class="thumbnail">
+                <a href="#" target="_blank"><img src="https://placehold.it/240x200" alt="..."></a>
+                <div class="">
+                  <h3 class="portfolio-title">Chatting application</h3>
+                  <p class="portfolio-subtitle">react native ,firebase</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="thumbnail">
+                <a href="#" target="_blank"><img src="https://placehold.it/240x200" alt="..."></a>
+                <div class="">
+                  <h3 class="portfolio-title">Bookstore application</h3>
+                  <p class="portfolio-subtitle">React ,Node</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <div class="thumbnail">
+                <a href="#" target="_blank"><img src="https://placehold.it/240x200" alt="..."></a>
+                <div class="">
+                  <h3 class="portfolio-title">Mobile applications</h3>
+                        <p class="portfolio-subtitle">React native</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact">
+        <div class="container" >
+              <div class="row" >
+                <div class="col-md-12">
+                  <p>Got a React site and need some help?
+                    <a class="btn btn-success pull-right contact-btn" href="https://www.twitter.com/aanaedu" role="button" target="_blank">Say hi</a></p>
+               </div>
+              </div>
+          </div>
+       </div>
+      <footer class="text-center">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+        <span>Copyright &copy; Ehsanulhaq & Said <span class="copyright-date">2015</span>. All rights reserved.</span>
+      </footer>
+          
 </body>
 </html>
-
-
-<script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
-
-
