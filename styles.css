@@ -173,9 +173,6 @@ body {
     color: #fbfbfb;
   }
   
-  
-  /* Small devices (tablets, 768px and up) */
-  
   @media (min-width: @screen-sm-min) {
     .intro-text {
       padding-top: 50px;
